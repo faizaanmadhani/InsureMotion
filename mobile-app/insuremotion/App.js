@@ -10,9 +10,10 @@ const axios = require('axios');
 
 export default function App() {
 
+
   return (
     <View style={styles.container}>
-      <Text>InsurEmotion, drive calm and get lower insurance. </Text>
+      <Text>InsurEmotion, drive calm and get lower insurance TODAY. </Text>
 
       <AccelerometerSensor />
       
