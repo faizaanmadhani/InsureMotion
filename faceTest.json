@@ -1,0 +1,22 @@
+[
+    {
+      "faceRectangle": {
+        "top": 141,
+        "left": 130,
+        "width": 162,
+        "height": 162
+      },
+      "faceAttributes": {
+        "emotion": {
+          "anger": 0.0,
+          "contempt": 0.0,
+          "disgust": 0.0,
+          "fear": 0.0,
+          "happiness": 0.196,
+          "neutral": 0.0,
+          "sadness": 0.0,
+          "surprise": 0.803
+        }
+      }
+    }
+  ]
