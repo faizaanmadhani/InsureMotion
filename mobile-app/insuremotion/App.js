@@ -3,9 +3,15 @@ import { StyleSheet, Text, View } from 'react-native';
 import AccelerometerSensor from './components/accelerometer'
 import { ShakeEventExpo } from './components/shakeDetect';
 import { Alert } from 'react-native'
+import { ThemeProvider, Button } from 'react-native-elements';
+
+
 
 
 export default function App() {
+
+
+
 
   ShakeEventExpo.addListener(() => {
 /*    fetch('http://8e134d89.ngrok.io/', {
@@ -19,6 +25,7 @@ export default function App() {
     secondParam: 'Distraction',
   }), */
 
+  return <RaisedButton title="Yea" />;
 
 function detRates(roadRage, distraction) {
     if (roadRage > 0.8 && distraction > 0.8) {
@@ -35,13 +42,21 @@ function detRates(roadRage, distraction) {
 
   }
   Alert.alert(detRates(1, 2));
+  var NewComponent = React.createClass({
+    render: function() {
+      return (
 
+        <button className="button button1">GET PREMIUMS</button>
+      );
+    }
+  });
 
    });
 
+
   return (
     <View style={styles.container}>
-      <Text>InsurEmotion, drive calm and get lower insurance. </Text>
+      <Text>InsurEmotion, drive calm and get lower insurance TODAY. </Text>
 
       <AccelerometerSensor />
 
