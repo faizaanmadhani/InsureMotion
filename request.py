@@ -18,3 +18,5 @@ def req(image_url):
                              headers=headers, json={"url": image_url})
 
     return json.dumps(response.json())
+
+
