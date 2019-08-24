@@ -8,8 +8,7 @@ import { Alert } from 'react-native'
 export default function App() {
 
   ShakeEventExpo.addListener(() => {
-    Alert.alert('SHAKING!!!');
-  /*  fetch('', {
+/*    fetch('http://8e134d89.ngrok.io/', {
   method: 'GET',
   headers: {
     Accept: 'application/json',
@@ -20,9 +19,8 @@ export default function App() {
     secondParam: 'Distraction',
   }), */
 
-  // Include function to get data to pass to Function
 
-  function detRates(roadRage, distraction) {
+function detRates(roadRage, distraction) {
     if (roadRage > 0.8 && distraction > 0.8) {
       return "Your Insurance Rates will likely see no decrease in value"
     } else if (roadRage > 0.6 && distraction > 0.6) {
@@ -36,7 +34,7 @@ export default function App() {
     }
 
   }
-  Alert.alert(detRates(1, 0.8));
+  Alert.alert(detRates(1, 2));
 
 
    });
