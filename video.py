@@ -16,7 +16,9 @@ import request
 
 def captureFrame():
     frameIndex = 1
-    videoStream = cv2.VideoCapture(0)
+    videoStream = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+    videoStream.set(cv2.CAP_PROP_FRAME_WIDTH, 1080)
+    videoStream.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
     video_start = time.time()
     last_frame_time = time.time()
@@ -28,7 +30,7 @@ def captureFrame():
         ret, frame = videoStream.read()
         if ret:
             cv2.imshow('frame', frame)
-            if curr_time - last_frame_time >= 10.0:
+            if curr_time - last_frame_time >= 8.0:
                 cv2.imwrite(str(frameIndex) + '.jpeg', frame)
                 # request.req('frame.jpeg')
                 frameIndex += 1
@@ -39,6 +41,3 @@ def captureFrame():
 
     videoStream.release()
     cv2.destroyAllWindows()
-
-
-captureFrame()
