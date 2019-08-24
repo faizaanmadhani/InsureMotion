@@ -24,13 +24,13 @@ def captureFrame():
     last_frame_time = time.time()
     while videoStream.isOpened():
         curr_time = time.time()
-        if (curr_time - video_start) >= 30.0:
+        if (curr_time - video_start) >= 10.0:
             break
 
         ret, frame = videoStream.read()
         if ret:
             cv2.imshow('frame', frame)
-            if curr_time - last_frame_time >= 8.0:
+            if curr_time - last_frame_time >= 2.0:
                 cv2.imwrite(str(frameIndex) + '.jpeg', frame)
                 # request.req('frame.jpeg')
                 frameIndex += 1
