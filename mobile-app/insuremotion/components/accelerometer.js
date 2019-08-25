@@ -28,7 +28,7 @@ export default class AccelerometerSensor extends React.Component {
   };
 
   _fast = () => {
-    Accelerometer.setUpdateInterval(16);
+    Accelerometer.setUpdateInterval(4);
   };
 
   _subscribe = () => {
@@ -46,8 +46,7 @@ export default class AccelerometerSensor extends React.Component {
     let { x, y, z } = this.state.accelerometerData;
     return (
       <View style={styles.sensor}>
-        <Text>Accelerometer:</Text>
-        <Text>
+        <Text style={{color: 'white', fontWeight: 'bold', fontSize: 20}}>
           x: {round(x)} y: {round(y)} z: {round(z)}
         </Text>
         <View style={styles.buttonContainer}>
@@ -78,14 +77,22 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
     alignItems: 'stretch',
-    marginTop: 15,
+    marginTop: 10,
   },
   button: {
-    flex: 1,
+    flex: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#eee',
+    backgroundColor: '#7DBFF5',
+    height: 100,
     padding: 10,
+    margin: 4,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderColor: '#7DBFF5',
+
+
+
   },
   middleButton: {
     borderLeftWidth: 1,

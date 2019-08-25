@@ -47,7 +47,7 @@ ShakeEventExpo.addListener(() => {
             loading: false,
             dataSource: data
         })
-    }).catch(error => console.log(error)) //To Catch any errors if they happen   
+    }).catch(error => console.log(error)) //To Catch any errors if they happen
 });
 }
 
@@ -57,10 +57,9 @@ return(
 
     <React.Fragment>
 
-        <Text>Here is how you performed today</Text>
         {!loading ? (
-            <Text>{dataSource}</Text>
-        ) : (<Text>Loading...</Text>)}
+            <Text style={{color: 'white', fontWeight: 'bold', fontSize: 10}}>{dataSource}</Text>
+        ) : (<Text style={{color: 'white', fontWeight: 'bold', fontSize: 25}}>Loading...</Text>)}
 
     </React.Fragment>
 
