@@ -24,7 +24,7 @@ export default function App() {
                 </View>
 
 
-                <View style={{flex: 1}}>
+                <View style={{flex: 1, width: 300, bottom: 20}}>
                   <Request />
                 </View>
 

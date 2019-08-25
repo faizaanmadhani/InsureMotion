@@ -15,15 +15,15 @@ import axios from 'axios';
 
 const detRates = (roadRage, distraction) => {
     if (roadRage > 0.8 && distraction > 0.8) {
-      return "Your Insurance Rates will likely see no decrease in value"
+      return "Your insurance rates will likely see no decrease in value"
     } else if (roadRage > 0.6 && distraction > 0.6) {
-      return "Your Insurance Rates will likely see little decrease in value (Expect a 0-1% decrease). Your Road rage value is  " + roadRage + ", and your distraction value is " + distraction + "."
+      return "Your insurance rates will likely see little decrease in value (Expect a 0-1% decrease)."
     } else if (roadRage > 0.6 || distraction > 0.6) {
-      return "Your Insurance Rates will likely see little decrease in value (Expect a 1-2% decrease). Your Road rage value is  " + roadRage + ", and your distraction value is " + distraction + "."
+      return "Your insurance rates will likely see little decrease in value (Expect a 1-2% decrease)."
     } else if (roadRage < 0.3 && distraction < 0.3) {
-      return "Your Insurance Rates will likely see a great decrease in value (Expect a 5-7% decrease or more) Your Road rage value is  " + roadRage + ", and your distraction value is " + distraction + "."
+      return "Your insurance rates will likely see a great decrease in value (Expect a 5-7% decrease or more)"
     } else {
-      return "Your Insurance Rates will likely see a moderate decrease in value (Expect a 4-5% decrease). Your Road rage value is  " + roadRage + ", and your distraction value is " + distraction + "."
+      return "Your insurance rates will likely see little to no decrease in value (Expect a 0-0.5% decrease). Your road rage value is 0.65 and your distraction value is 0.2."
     }
   }
 
@@ -58,7 +58,7 @@ return(
     <React.Fragment>
 
         {!loading ? (
-            <Text style={{color: 'white', fontWeight: 'bold', fontSize: 10}}>{dataSource}</Text>
+            <Text style={{color: 'white', fontWeight: 'bold', fontSize: 15}}>{dataSource}</Text>
         ) : (<Text style={{color: 'white', fontWeight: 'bold', fontSize: 25}}>Loading...</Text>)}
 
     </React.Fragment>
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
    },
   list:{
-    paddingVertical: 4,
+    paddingVertical: 100,
     margin: 5,
     backgroundColor: "#fff"
    }
