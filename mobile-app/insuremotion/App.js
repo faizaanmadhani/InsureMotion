@@ -13,12 +13,13 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>InsurEmotion, drive calm and get lower insurance TODAY. </Text>
+      <Text style={styles.text}>InsurEmotion, drive calm and get lower insurance TODAY. </Text>
 
       <AccelerometerSensor />
       
       <Request />
 
+    
     </View>
     );
   }
@@ -31,5 +32,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+    fontSize: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center'
+
   }
 });
