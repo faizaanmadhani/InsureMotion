@@ -21,6 +21,7 @@ const detRates = (roadRage, distraction) => {
     } else if (roadRage > 0.6 || distraction > 0.6) {
       return "Your insurance rates will likely see little decrease in value (Expect a 1-2% decrease)."
     } else if (roadRage < 0.3 && distraction < 0.3) {
+      
       return "Your insurance rates will likely see a great decrease in value (Expect a 5-7% decrease or more)"
     } else {
       return "Your insurance rates will likely see little to no decrease in value (Expect a 0-0.5% decrease). Your road rage value is 0.65 and your distraction value is 0.2."
