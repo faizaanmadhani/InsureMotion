@@ -102,8 +102,9 @@
 
       <script>
 
+function runScript() {
         var xmlhttp = new XMLHttpRequest();
-        var url = "https://4d3a4c76.ngrok.io";
+        var url = "https://1791df63.ngrok.io";
 
         xmlhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
@@ -127,9 +128,9 @@
 
 
 
-        }
+        }}
       </script>
-      <div id="id01"></div>
+<!--      <div id="id01"></div> -->
 
 
       <div class="main-panel">
@@ -144,7 +145,7 @@
             <nav aria-label="breadcrumb">
               <ul class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page">
-                <button type="button" onclick="httpGet()" class="btn btn-gradient-primary btn-fw">Start Trip</button>
+                <button type="button" onclick="runScript()" class="btn btn-gradient-primary btn-fw">Start Trip</button>
 
                 </li>
               </ul>
