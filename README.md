@@ -6,6 +6,6 @@ Driving is an essential aspect of our everyday life, and the safety of driving s
 
 ## What it does
 
-[InsureMotion Camera][https://raw.githubusercontent.com/faizaanmadhani/Hackthe6ix2019/master/gallery.png]
+![InsureMotion Camera](https://raw.githubusercontent.com/faizaanmadhani/Hackthe6ix2019/master/gallery.png)
 
 InsureMotion is a mobile app that tracks your driving to determine whether or not you have a road rage problem. Stay calm and collected while driving? The app will help you reduce your insurance premiums. The app will film you while driving and look for facial expressions to detect emotion. The emotion data is used to see how calm and collected you can stay while on the road.
